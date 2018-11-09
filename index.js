@@ -1,11 +1,15 @@
 const _ = require('lodash');
 const request = require('request');
 const express = require('express');
+const env = require('node-env-file');
 const app = express();
 var cors = require('cors')
 
+// const API_KEY = (process.env.KEY)
+
 // Constants
-const SHEET_URL = 'https://sheets.googleapis.com/v4/spreadsheets/1i2qbKeasPptIrY1PkFVjbHSrLtKEPIIwES6m2l2Mdd8/values/A1%3AE45?key=AIzaSyDKy_NLpawUj6ylQ5-ylXVKajMevNV9byo';
+// const SHEET_URL = 'https://sheets.googleapis.com/v4/spreadsheets/1i2qbKeasPptIrY1PkFVjbHSrLtKEPIIwES6m2l2Mdd8/values/A1%3AE45' + API_KEY;
+const SHEET_URL = 'https://sheets.googleapis.com/v4/spreadsheets/1i2qbKeasPptIrY1PkFVjbHSrLtKEPIIwES6m2l2Mdd8/values/A1%3AE45?key=AIzaSyDsDfAQJ3sAjU4Ba8gP0NLgX0iudvekIlM';
 const ASCEND_SORT = 'asc';
 const DESCEND_SORT = 'desc';
 
